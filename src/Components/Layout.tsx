@@ -2,60 +2,27 @@ import {NavLink} from "react-router";
 import Work from "./Work.tsx";
 import Skills from "./Skills.tsx";
 import Contact from "./Contact.tsx";
+import Dashboard from "./Dashboard/Dashboard.tsx";
 
 function Layout() {
     return (
         <div>
-            <header className="d-flex flex-row justify-content-between p-3"
-                    style={{borderBottom: '1px solid var(--accent)'}}>
-                <a href="/" className="nav-logo">Melissa<span>.dev</span></a>
-                <nav className="navbar" style={{gap: '40px'}}>
+            <header className="d-flex flex-row justify-content-between p-3 navbar"
+                    style={{borderBottom: '1px solid var(--accent)', alignItems: 'center'}}>
+                {/*<a href="/" className="nav-logo">Melissa<span>.dev</span></a>*/}
+                <a className="navbar-brand" href="/">
+                    MD
+                </a>
+                <nav className="nav-links" style={{gap: '40px'}}>
                     {/*<a href="#" className="nav-logo">alex<span>.dev</span></a>*/}
-                    <NavLink to="/work" className="nav-link">Work</NavLink>
-                    <NavLink to="/about" className="nav-link">About</NavLink>
-                    <NavLink to="/skills" className="nav-link">Skills</NavLink>
-                    <NavLink to="/contact" className="nav-link">Contact</NavLink>
-                    <button className="nav-cta">Hire Me</button>
+                    <NavLink to="/work">Work</NavLink>
+                    <NavLink to="/about">About</NavLink>
+                    <NavLink to="/skills">Skills</NavLink>
+                    <NavLink to="/contact">Contact</NavLink>
                 </nav>
+                <button className="btn btn-primary">Hire Me</button>
             </header>
-            <section className="hero" id="hero">
-                <div className="hero-bg-grid"></div>
-                <div className="hero-orb hero-orb-1"></div>
-                <div className="hero-orb hero-orb-2"></div>
-
-                <p className="hero-label">Available for freelance · Based in San Francisco</p>
-
-                <h1 className="hero-headline">
-                    Frontend<br/>
-                    <span className="line2">Developer &</span><br/>
-                    <span className="accent-word">Craftsman.</span>
-                </h1>
-
-                <div className="hero-bottom">
-                    <p className="hero-desc">
-                        I build <strong>fast, beautiful interfaces</strong> that feel as good as they look.
-                        React, TypeScript, motion design — from idea to pixel-perfect reality.
-                    </p>
-                    <div className="hero-actions">
-                        <div className="hero-btn-group">
-                            <button>Work</button>
-                            <button>Talk</button>
-                            {/*<button className="btn-primary"*/}
-                            {/*        onClick="document.querySelector('#work').scrollIntoView({behavior:'smooth'})">View*/}
-                            {/*    My Work*/}
-                            {/*</button>*/}
-                            {/*<button className="btn-ghost"*/}
-                            {/*        onClick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Let's*/}
-                            {/*    Talk*/}
-                            {/*</button>*/}
-                        </div>
-                        <div className="hero-scroll-hint">
-                            <span className="arrow">↓</span>
-                            <span>scroll to explore</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Dashboard/>
             <div className="marquee-wrap">
                 <div className="marquee-track">
                     <div

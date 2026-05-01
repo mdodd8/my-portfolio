@@ -10,35 +10,29 @@
     --border: rgba(255,255,255,0.07);
     --border2: rgba(255,255,255,0.12);
     --card: rgba(255,255,255,0.03);
+    --primary-text: 'Syne';
+    --secondary-text: 'JetBrains Mono';
 }
 
 html { scroll-behavior: smooth; }
 
 body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Syne', sans-serif;
+    background: var(--bg) !important;
+    color: var(--text) !important;
+    font-family: var(--primary-text), sans-serif;
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
 }
 
-/* Noise overlay */
-body::before {
-    content: '';
-    position: fixed; inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
-    pointer-events: none;
-    z-index: 1000;
-    opacity: 0.4;
+.btn-primary {
+    padding: 8px 40px;
+    background: var(--accent);
+    color: var(--bg);
 }
 
-.hero-bg-grid {
-    position: absolute; inset: 0;
-    background-image:
-            linear-gradient(var(--border) 1px, transparent 1px),
-            linear-gradient(90deg, var(--border) 1px, transparent 1px);
-    background-size: 60px 60px;
-    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
-    pointer-events: none;
+.btn-primary:hover {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
 }

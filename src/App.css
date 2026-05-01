@@ -1,10 +1,41 @@
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
+
+nav {
+    transition: background 0.4s, border-color 0.4s, backdrop-filter 0.4s;
 }
 
-.navbar a:hover, .active{
-    color:var(--accent) !important;
-    text-decoration: underline !important;
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--bg);
+}
+
+
+.nav-links {
+    display: flex; gap: 36px; list-style: none;
+}
+
+.nav-links a {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text2);
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+
+.navbar-brand {
+    color: white;
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    height: 2.5rem;
 }
