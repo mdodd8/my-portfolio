@@ -20,8 +20,8 @@ function Layout() {
                     MD
                 </a>
                 <nav className="nav-links" style={{gap: '40px'}}>
-                    <a href="#work">Work</a>
                     <a href="#about">About</a>
+                    <a href="#work">Work</a>
                     <a href="#skills">Skills</a>
                     <a href="#contact">Contact</a>
                 </nav>

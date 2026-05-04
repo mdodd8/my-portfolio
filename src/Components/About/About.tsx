@@ -9,13 +9,7 @@ function About() {
                 <div>
                     <h2 className="section-title">Pixel-perfect obsessed,<br/>performance-first mindset.</h2>
                     <div className="about-text">
-                        <p>I'm <strong>Alex Rivera</strong>, a frontend developer with 5+ years turning design systems
-                            and product ideas into living, breathing interfaces. I care deeply about the intersection of
-                            engineering quality and visual craft.</p>
-                        <p>My work has shipped at Series B startups, design studios, and enterprise SaaS platforms. I
-                            believe the best frontends are invisible — <strong>they just feel right</strong>.</p>
-                        <p>When I'm not pushing pixels, I'm contributing to open source, writing about CSS architecture,
-                            or experimenting with generative art.</p>
+                        <p>I'm <strong>Melissa Dodd</strong>, a Front-end developer with over 10 years of experience building responsive, user-focused interfaces. I take pride in executing designs with precision, ensuring every detail aligns pixel-perfect with mockups. Known for staying focused and seeing projects through to completion, I deliver polished, high-quality results that match both vision and functionality.</p>
                     </div>
                 </div>
                 <div className="about-stats">
