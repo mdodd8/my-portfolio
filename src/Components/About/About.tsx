@@ -14,20 +14,20 @@ function About() {
                 </div>
                 <div className="about-stats">
                     <div className="stat-box">
-                        <span className="stat-num">10+</span>
+                        <span className="stat-num">11+</span>
                         <span className="stat-label">Years Experience</span>
                     </div>
                     <div className="stat-box">
-                        <span className="stat-num">40+</span>
+                        <span className="stat-num">15+</span>
                         <span className="stat-label">Projects Shipped</span>
                     </div>
                     <div className="stat-box">
-                        <span className="stat-num">12</span>
-                        <span className="stat-label">Happy Clients</span>
+                        <span className="stat-num">15+</span>
+                        <span className="stat-label">Certifications</span>
                     </div>
                     <div className="stat-box">
-                        <span className="stat-num">3</span>
-                        <span className="stat-label">Design Awards</span>
+                        <span className="stat-num">10+</span>
+                        <span className="stat-label">Technologies</span>
                     </div>
                 </div>
             </div>

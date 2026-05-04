@@ -33,12 +33,12 @@ function App() {
               <div className="carousel-wrap">
                   <div className="carousel-track">
                       <div className="marquee-item">React <span>✦</span> TypeScript <span>✦</span> Wireframing <span>✦</span> UX Design
-                          CSS <span>✦</span> HTML
-                          CSS <span>✦</span> Vue <span>✦</span> Angular <span>✦</span> Figma <span>✦</span> Mendix <span>✦</span> Git <span>✦</span> UX Research <span>✦</span> Dynamic Interfaces <span>✦</span> Performance <span>✦</span>
+                           <span>✦</span> HTML<span>✦</span> CSS
+                           <span>✦</span> Vue <span>✦</span> Angular <span>✦</span> Figma <span>✦</span> Mendix <span>✦</span> Git <span>✦</span> UX Research <span>✦</span> Dynamic Interfaces <span>✦</span> Performance <span>✦</span>
                       </div>
                       <div className="marquee-item">React <span>✦</span> TypeScript <span>✦</span> Wireframing <span>✦</span> UX Design
-                          CSS <span>✦</span> HTML
-                          CSS <span>✦</span> Vue <span>✦</span> Angular <span>✦</span> Figma <span>✦</span> Mendix <span>✦</span> Git <span>✦</span> UX Research <span>✦</span> Dynamic Interfaces <span>✦</span> Performance <span>✦</span>
+                          <span>✦</span> HTML<span>✦</span> CSS
+                          <span>✦</span> Vue <span>✦</span> Angular <span>✦</span> Figma <span>✦</span> Mendix <span>✦</span> Git <span>✦</span> UX Research <span>✦</span> Dynamic Interfaces <span>✦</span> Performance <span>✦</span>
                       </div>
                   </div>
               </div>
