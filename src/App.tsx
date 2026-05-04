@@ -1,7 +1,7 @@
 import './App.css'
 import Dashboard from "./Components/Dashboard/Dashboard.tsx";
 import About from "./Components/About/About.tsx";
-import Work from "./Components/Work/Work.tsx";
+// import Work from "./Components/Work/Work.tsx";
 import Skills from "./Components/Skills/Skills.tsx";
 import Experience from "./Components/Experience/Experience.tsx";
 import Contact from "./Components/Contact/Contact.tsx";
@@ -22,7 +22,7 @@ function App() {
               </a>
               <nav className="nav-links" style={{gap: '40px'}}>
                   <a href="#about">About</a>
-                  <a href="#work">Work</a>
+                  {/*<a href="#work">Work</a>*/}
                   <a href="#skills">Skills</a>
                   <a href="#contact">Contact</a>
               </nav>
@@ -45,7 +45,7 @@ function App() {
               <About />
               <Skills />
               <Experience />
-              <Work />
+              {/*<Work />*/}
               <Contact />
           </main>
           <footer>
