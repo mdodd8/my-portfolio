@@ -1,72 +1,98 @@
 import './Skills.css'
+import type {SkillsInterface} from "../../Interfaces/SkillsInterface.ts";
 
+
+const SkillArray: SkillsInterface[] = [
+    {
+        id: 1,
+        title: "Front-End Development",
+        description:
+            "Strong foundation in HTML, CSS, and JavaScript with a focus on building responsive, accessible, and performant interfaces.",
+        tags: [
+            {label: "HTML & CSS"},
+            {label: "JavaScript"},
+            {label: "Responsive design"},
+        ]
+    },
+    {
+        id: 2,
+        title: "Framework Expertise",
+        description:
+            "Experience working across React, Vue, and Angular to develop scalable, maintainable applications using modern best practices.",
+        tags: [
+            {label: "React"},
+            {label: "Vue"},
+            {label: "Angular"},
+        ]
+    },
+    {
+        id: 3,
+        title: "UI Engineering",
+        description:
+            "Skilled in building dynamic, component-driven interfaces that prioritize usability, performance, and clean architecture.",
+        tags: [
+            {label: "Dynamic user interfaces"},
+            {label: "Component-based architecture"},
+            {label: "State management"},
+        ]
+    },
+    {
+        id: 4,
+        title: "UX Design Foundation",
+        description:
+            "Skilled in building dynamic, component-driven interfaces that prioritize usability, performance, and clean architecture.",
+        tags: [
+            {label: "Google UX Design Professional Certificate"},
+            {label: "UX principles & usability"},
+            {label: "User driven design"},
+        ]
+    },
+    {
+        id: 5,
+        title: "Design & Prototyping",
+        description:
+            "Backed by a Google UX Design certification, with an emphasis on creating intuitive, user-centered experiences.",
+        tags: [
+            {label: "Wireframing"},
+            {label: "low-fidelity prototypes"},
+            {label: "High-fidelity design"},
+            {label: "Figma"},
+            {label: "Interactive prototyping"},
+        ]
+    },
+    {
+        id: 6,
+        title: "Research & Workflow",
+        description:
+            "Proficient in translating ideas into wireframes and high-fidelity Figma designs, ensuring accuracy from concept to final build.",
+        tags: [
+            {label: "UX research & user testing"},
+            {label: "Empathize / Define / Ideate process"},
+            {label: "Version control"},
+            {label: "Mendix"}
+        ]
+    },
+];
 
 function Skills() {
     return (
         <section id="skills" className="skills-section">
             <div className="section-header">Skills</div>
-            <h2 className="section-title">What I bring to the table.</h2>
+            <h2 className="section-title">What I bring to the table</h2>
 
             <div className="skills-grid">
-                <div className="skill-card" data-num="01">
-                    <div className="skill-icon">⚛</div>
-                    <div className="skill-name">React Ecosystem</div>
-                    <p className="skill-desc">Deep expertise in modern React patterns — hooks, context, server
-                        components, Suspense, and state management at scale.</p>
-                    <div className="skill-tags">
-                        <span className="stag">React 19</span><span className="stag">Next.js</span>
+                {SkillArray.map((skill) => (
+                    <div className="skill-card" data-num={skill.id.toString()}>
+                        <div className="skill-icon">✦</div>
+                        <div className="skill-name">{skill.title}</div>
+                        <p className="skill-desc">{skill.description}</p>
+                        <div className="skill-tags">
+                            {skill.tags.map((tag) => (
+                                <span className="stag">{tag.label}</span>
+                            ))}
+                        </div>
                     </div>
-                </div>
-                <div className="skill-card" data-num="02">
-                    <div className="skill-icon">✦</div>
-                    <div className="skill-name">Motion & Animation</div>
-                    <p className="skill-desc">Crafting fluid interactions with Framer Motion, GSAP, and CSS that add
-                        delight without sacrificing performance.</p>
-                    <div className="skill-tags">
-                        <span className="stag">Framer Motion</span><span className="stag">GSAP</span><span
-                        className="stag">CSS Animations</span>
-                    </div>
-                </div>
-                <div className="skill-card" data-num="03">
-                    <div className="skill-icon">♿</div>
-                    <div className="skill-name">Accessibility</div>
-                    <p className="skill-desc">WCAG 2.2 compliance, semantic HTML, keyboard navigation, and screen-reader
-                        testing built into my workflow from day one.</p>
-                    <div className="skill-tags">
-                        <span className="stag">WCAG 2.2</span><span className="stag">ARIA</span><span
-                        className="stag">axe-core</span>
-                    </div>
-                </div>
-                <div className="skill-card" data-num="04">
-                    <div className="skill-icon">⚡</div>
-                    <div className="skill-name">Performance</div>
-                    <p className="skill-desc">Core Web Vitals optimization, code splitting, image pipelines, and bundle
-                        analysis to keep sites fast and Lighthouse green.</p>
-                    <div className="skill-tags">
-                        <span className="stag">Lighthouse</span><span className="stag">Webpack</span><span
-                        className="stag">Edge CDN</span>
-                    </div>
-                </div>
-                <div className="skill-card" data-num="05">
-                    <div className="skill-icon">🎨</div>
-                    <div className="skill-name">Design Systems</div>
-                    <p className="skill-desc">Building scalable component libraries with Storybook, design tokens, and
-                        documentation that teams actually use.</p>
-                    <div className="skill-tags">
-                        <span className="stag">Storybook</span><span className="stag">Figma</span><span
-                        className="stag">Tokens</span>
-                    </div>
-                </div>
-                <div className="skill-card" data-num="06">
-                    <div className="skill-icon">🔧</div>
-                    <div className="skill-name">TypeScript & Testing</div>
-                    <p className="skill-desc">Strict TypeScript, unit and integration tests with Vitest, E2E with
-                        Playwright for confidence at every deploy.</p>
-                    <div className="skill-tags">
-                        <span className="stag">TypeScript</span><span className="stag">Vitest</span><span
-                        className="stag">Playwright</span>
-                    </div>
-                </div>
+                ))}
             </div>
         </section>
     );
