@@ -1,7 +1,11 @@
 import './Dashboard.css'
 
+interface Props {
+    scrollTo: (id: string) => void;
+}
 
-function Dashboard() {
+
+function Dashboard({scrollTo}: Props) {
     return (
         <section className="hero" id="hero">
             <div className="hero-bg-grid"></div>
@@ -21,16 +25,8 @@ function Dashboard() {
                 </p>
                 <div className="hero-actions">
                     <div className="hero-btn-group">
-                        <button className="btn btn-primary">Work</button>
-                        <button className="btn btn-ghost">Talk</button>
-                        {/*<button className="btn-primary"*/}
-                        {/*        onClick="document.querySelector('#work').scrollIntoView({behavior:'smooth'})">View*/}
-                        {/*    My Work*/}
-                        {/*</button>*/}
-                        {/*<button className="btn-ghost"*/}
-                        {/*        onClick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Let's*/}
-                        {/*    Talk*/}
-                        {/*</button>*/}
+                        <button className="btn global-btn" onClick={() => scrollTo('work')}>Work</button>
+                        <button className="btn btn-ghost" onClick={() => scrollTo('skills')}>Skills</button>
                     </div>
                     <div className="hero-scroll-hint">
                         <span className="arrow">↓</span>

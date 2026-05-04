@@ -1,5 +1,5 @@
 .hero {
-    min-height: 100vh;
+    min-height: 85vh;
     display: flex; flex-direction: column; justify-content: flex-end;
     padding: 0 48px 80px;
     position: relative;
@@ -17,7 +17,7 @@
 
 .hero-label {
     font-family: var(--secondary-text), monospace;
-    font-size: 14px;
+    font-size: 15px;
     color: var(--accent);
     opacity: 0;
     position: relative;

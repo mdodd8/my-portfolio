@@ -1,0 +1,30 @@
+.carousel-wrap {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+    padding: 10px 0;
+    background: var(--bg2);
+}
+.carousel-track {
+    display: flex; gap: 48px;
+    width: max-content;
+    animation: carousel 28s linear infinite;
+}
+.marquee-item {
+    display: flex; align-items: center; gap: 48px;
+    white-space: nowrap;
+    font-family: var(--secondary-text), monospace;
+    font-size: 13px;
+    color: var(--text3);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.marquee-item span {
+    color: var(--accent);
+    font-size: 16px;
+    line-height: 1;
+}
+@keyframes carousel {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}

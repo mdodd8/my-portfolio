@@ -1,0 +1,59 @@
+.skills-section { background: var(--bg2); }
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-top: 25px;
+}
+.skill-card {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    padding: 32px 28px;
+    transition: border-color 0.3s, background 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.skill-card::before {
+    content: attr(data-num);
+    position: absolute; top: 16px; right: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    font-weight: 900;
+    color: rgba(184,242,110,0.05);
+    line-height: 1;
+    transition: color 0.3s;
+}
+.skill-card:hover { background: rgba(184,242,110,0.03); border-color: rgba(184,242,110,0.2); }
+.skill-card:hover::before { color: rgba(184,242,110,0.12); }
+.skill-icon {
+    width: 44px; height: 44px;
+    border: 1px solid var(--border2);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.skill-name {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+.skill-desc {
+    font-size: 13px;
+    color: var(--text2);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+.skill-tags {
+    display: flex; flex-wrap: wrap; gap: 6px;
+}
+.stag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 3px 9px;
+    border-radius: 2px;
+    background: rgba(184,242,110,0.08);
+    color: var(--accent);
+    border: 1px solid rgba(184,242,110,0.15);
+}

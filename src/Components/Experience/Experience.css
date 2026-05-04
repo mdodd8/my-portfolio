@@ -1,0 +1,44 @@
+.experience-section { background: var(--bg2); }
+.exp-list { margin-top: 15px; }
+.exp-item {
+    display: grid;
+    grid-template-columns: 200px 1fr auto;
+    gap: 40px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: start;
+    transition: border-color 0.3s;
+}
+.exp-item:first-child { border-top: 1px solid var(--border); }
+.exp-item:hover { border-bottom-color: var(--accent2); }
+.exp-period {
+    font-family: var(--secondary-text), monospace;
+    color: var(--text2);
+    padding-top: 4px;
+    letter-spacing: 0.04em;
+}
+.exp-company {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.exp-role {
+    font-size: 14px;
+    color: var(--accent);
+    font-family: var(--secondary-text), monospace;
+    margin-bottom: 12px;
+}
+.exp-desc {
+    font-size: 15px;
+    color: var(--text2);
+    line-height: 1.7;
+}
+.exp-badge {
+    font-family: var(--secondary-text), monospace;
+    font-size: 13px;
+    padding: 6px 14px;
+    border: 1px solid var(--accent);
+    border-radius: 100px;
+    color: var(--text2);
+    white-space: nowrap;
+}
