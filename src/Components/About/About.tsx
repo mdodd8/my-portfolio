@@ -7,7 +7,7 @@ function About() {
             <div className="section-header">About Me</div>
             <div className="about-grid">
                 <div>
-                    <h2 className="section-title">Pixel-perfect obsessed,<br/>performance-first mindset.</h2>
+                    <h2 className="section-title">Performance-first mindset.</h2>
                     <div className="about-text">
                         <p>I'm <strong>Melissa Dodd</strong>, a Front-end developer with over 10 years of experience building responsive, user-focused interfaces. I take pride in executing designs with precision, ensuring every detail aligns pixel-perfect with mockups. Known for staying focused and seeing projects through to completion, I deliver polished, high-quality results that match both vision and functionality.</p>
                     </div>
