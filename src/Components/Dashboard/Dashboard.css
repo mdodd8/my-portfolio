@@ -48,6 +48,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    flex-direction: row;
     opacity: 0;
     animation: fade-up 0.8s ease forwards 0.6s;
 }
@@ -136,4 +137,16 @@
 @keyframes fade-up {
     from { opacity: 0; transform: translateY(32px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 768px) { /* adjust breakpoint as needed */
+    .hero-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-actions {
+        align-items: flex-start;
+    }
 }

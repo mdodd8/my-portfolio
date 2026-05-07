@@ -42,3 +42,11 @@
     color: var(--text2);
     white-space: nowrap;
 }
+
+
+@media (max-width: 768px) {
+    .exp-item {
+        display: flex;
+        flex-direction: column;
+    }
+}
