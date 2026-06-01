@@ -1,6 +1,6 @@
 import './Dashboard.css'
-import {LucideDownload} from "lucide-react";
-import PDF from "../../assets/Melissa_Dodd_Resume (1).pdf"
+// import {LucideDownload} from "lucide-react";
+// import PDF from "../../assets/Melissa_Dodd_Resume (1).pdf"
 
 interface Props {
     scrollTo: (id: string) => void;

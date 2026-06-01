@@ -6,8 +6,8 @@ import Skills from "./Components/Skills/Skills.tsx";
 import Experience from "./Components/Experience/Experience.tsx";
 import Contact from "./Components/Contact/Contact.tsx";
 // import Projects from "./Components/Projects/Projects.tsx";
-import { LucideDownload } from "lucide-react";
-import PDF from "./assets/Melissa_Dodd_Resume (1).pdf"
+// import { LucideDownload } from "lucide-react";
+// import PDF from "./assets/Melissa_Dodd_Resume (1).pdf"
 
 const scrollTo = (id: string) => {
     document.querySelector(`#${id}`)?.scrollIntoView({ behavior: 'smooth' });
