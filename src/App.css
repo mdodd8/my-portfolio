@@ -35,10 +35,12 @@ nav {
 }
 
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     background: var(--bg);
+    left: 0;
+    width: 100%;
 }
 
 
@@ -119,8 +121,10 @@ footer {
 }
 
 .global-btn {
-    padding: 8px 40px;
-    background: var(--accent);
+    padding: 8px 25px;
+    /*background: var(--accent);*/
+    background-color: var(--accent);
+    /*background: var(--accent);*/
     color: var(--bg);
     border: none;
     border-radius: 3px;
@@ -136,6 +140,17 @@ footer {
     background: transparent;
     color: var(--accent);
     border: 1px solid var(--accent);
+    cursor: pointer;
+}
+
+.ghost-btn {
+    border: 1.5px solid gray;
+    color: gray;
+}
+
+.ghost-btn:hover {
+    border: 1px solid var(--accent);
+    background: #b8f26e3d;
 }
 
 @media (max-width: 768px) {

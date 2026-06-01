@@ -53,7 +53,7 @@ function Contact() {
         <section id="contact" className="contact-section">
             <div className=" d-flex flex-column justify-content-center align-items-center">
                 <h1 className="font-text" style={{color: 'var(--accent)'}}>&nbsp; Get In Touch &nbsp;</h1>
-                <form className="d-flex flex-column" style={{width: '100%'}} onSubmit={handleSubmit} noValidate>
+                <form className="d-flex flex-column" style={{width: '100%', maxWidth: '750px'}} onSubmit={handleSubmit} noValidate>
                     <div style={{ textAlign: 'left'}}>
                         <label className="text-color">Name</label>
                         {attempted && errors.name === 'missing' && (
