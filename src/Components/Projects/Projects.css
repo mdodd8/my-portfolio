@@ -1,0 +1,45 @@
+.type-badge {
+    background: #253e5f;;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 0px 11px;
+}
+
+.proj-title {
+    font-size: 22px;
+}
+
+.proj-description {
+    font-size: 14px;
+    color: #b2abab;
+}
+
+.subtext-badge {
+    background: #262624;
+    border-radius: 15px;
+    padding: 13px;
+    font-size: 14px;
+}
+
+.subtext-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
+}
+
+.destination-btn {
+    border-radius: 5px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-size: 13px;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+
+.destination-btn:hover {
+    background: gray;
+    border: 1px solid #6a7c50;
+    box-shadow: 1px 1px 9px black;
+}

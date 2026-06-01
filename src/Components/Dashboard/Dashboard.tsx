@@ -25,6 +25,7 @@ function Dashboard({scrollTo}: Props) {
                 </p>
                 <div className="hero-actions">
                     <div className="hero-btn-group">
+                        {/*<button className="btn global-btn" onClick={() => scrollTo('work')}>Work</button>*/}
                         <button className="btn global-btn" onClick={() => scrollTo('skills')}>Skills</button>
                     </div>
                     <div className="hero-scroll-hint">

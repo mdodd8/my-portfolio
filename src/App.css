@@ -137,3 +137,9 @@ footer {
     color: var(--accent);
     border: 1px solid var(--accent);
 }
+
+@media (max-width: 768px) {
+    .topbar-contact {
+        display: none;
+    }
+}

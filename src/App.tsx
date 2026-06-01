@@ -5,6 +5,7 @@ import About from "./Components/About/About.tsx";
 import Skills from "./Components/Skills/Skills.tsx";
 import Experience from "./Components/Experience/Experience.tsx";
 import Contact from "./Components/Contact/Contact.tsx";
+import Projects from "./Components/Projects/Projects.tsx";
 
 const scrollTo = (id: string) => {
     document.querySelector(`#${id}`)?.scrollIntoView({ behavior: 'smooth' });
@@ -26,7 +27,7 @@ function App() {
                   <a href="#skills">Skills</a>
                   <a href="#contact">Contact</a>
               </nav>
-              <button className="btn global-btn" onClick={() =>document.querySelector('#contact')?.scrollIntoView({behavior: 'smooth'})}>Contact Me</button>
+              <button className="btn global-btn topbar-contact" onClick={() =>document.querySelector('#contact')?.scrollIntoView({behavior: 'smooth'})}>Contact</button>
           </header>
           <main>
               <Dashboard scrollTo={scrollTo} />
@@ -42,10 +43,11 @@ function App() {
                       </div>
                   </div>
               </div>
-              <About />
+              <About/>
               <Skills />
               <Experience />
               {/*<Work />*/}
+              {/*<Projects />*/}
               <Contact />
           </main>
           <footer>
