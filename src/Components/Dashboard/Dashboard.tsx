@@ -27,9 +27,9 @@ function Dashboard({scrollTo}: Props) {
                 </p>
                 <div className="hero-actions">
                     <div className="hero-btn-group align-items-end">
-                        <a  href={PDF} download="Melissa_Dodd_Resume (1).pdf" className="btn ghost-btn d-flex gap-3" style={{color: 'white', height: 'fit-content'}}>
-                            <LucideDownload style={{height: '20px', width: '20px'}} className="icon"/>
-                            Download Resume</a>
+                        {/*<a  href={PDF} download="Melissa_Dodd_Resume (1).pdf" className="btn ghost-btn d-flex gap-3" style={{color: 'white', height: 'fit-content'}}>*/}
+                        {/*    <LucideDownload style={{height: '20px', width: '20px'}} className="icon"/>*/}
+                        {/*    Download Resume</a>*/}
                         <div className="d-flex flex-column gap-3">
                             <button className="btn global-btn" onClick={() => scrollTo('skills')}>Skills</button>
                             {/*<button className="btn ghost-btn d-flex gap-3" style={{color: 'white'}}*/}

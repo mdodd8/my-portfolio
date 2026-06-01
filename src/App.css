@@ -157,4 +157,8 @@ footer {
     .topbar-contact {
         display: none;
     }
+
+    .resume {
+        display: none !important;
+    }
 }
