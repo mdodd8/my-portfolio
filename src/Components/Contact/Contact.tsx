@@ -8,18 +8,18 @@ function Contact() {
     const [form, setForm] = useState({name: '', email: '', message: ''});
     const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
     const [attempted, setAttempted] = useState(false);
-    const [errors, setErrors] = useState({ name: '', email: '', message: '' });
+    const [errors, setErrors] = useState({name: '', email: '', message: ''});
 
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setForm({ ...form, [e.target.name]: e.target.value });
+        setForm({...form, [e.target.name]: e.target.value});
     };
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setAttempted(true);
         console.log(attempted, 'sttempteds')
-        const newErrors = { name: '', email: '', message: '' };
+        const newErrors = {name: '', email: '', message: ''};
         if (!form.name) newErrors.name = 'missing';
         if (!form.email) newErrors.email = 'missing';
         else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) newErrors.email = 'invalid';
@@ -34,27 +34,26 @@ function Contact() {
             await emailjs.send(
                 'service_bpkryhk',
                 'template_xqmytp8',
-                { name: form.name, email: form.email, message: form.message },
+                {name: form.name, email: form.email, message: form.message},
                 '5xZmRZzZRhY0r-Zew'
             );
             setStatus('success');
-            setForm({ name: '', email: '', message: '' });
+            setForm({name: '', email: '', message: ''});
             setAttempted(false);
-            setErrors({ name: '', email: '', message: '' });
+            setErrors({name: '', email: '', message: ''});
         } catch {
             setStatus('error');
         }
     };
 
 
-
-
     return (
         <section id="contact" className="contact-section">
             <div className=" d-flex flex-column justify-content-center align-items-center">
-                <h1 className="font-text" style={{color: 'var(--accent)'}}>&nbsp; Get In Touch &nbsp;</h1>
-                <form className="d-flex flex-column" style={{width: '100%', maxWidth: '750px'}} onSubmit={handleSubmit} noValidate>
-                    <div style={{ textAlign: 'left'}}>
+                <h1 className="font-text">&nbsp; Get In Touch &nbsp;</h1>
+                <form className="d-flex flex-column" style={{width: '100%', maxWidth: '750px'}} onSubmit={handleSubmit}
+                      noValidate>
+                    <div style={{textAlign: 'left'}}>
                         <label className="text-color">Name</label>
                         {attempted && errors.name === 'missing' && (
                             <p className="error-message">* A name is required to submit</p>
@@ -69,7 +68,6 @@ function Contact() {
                             value={form.name}
                             onChange={handleChange}
                         />
-
                         <label className="text-color">Email</label>
                         {attempted && errors.email === 'missing' && (
                             <p className="error-message">* A valid email is required to submit</p>
@@ -87,7 +85,6 @@ function Contact() {
                             value={form.email}
                             onChange={handleChange}
                         />
-
                         <label className="text-color">Message</label>
                         {attempted && errors.message === 'missing' && (
                             <p className="error-message">* A message is required to submit</p>
@@ -105,7 +102,6 @@ function Contact() {
                             onChange={handleChange}
                         ></textarea>
                     </div>
-
                     <div className="d-flex justify-content-center" style={{paddingTop: '10px'}}>
                         <button
                             type="submit"

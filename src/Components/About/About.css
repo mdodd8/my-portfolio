@@ -27,10 +27,6 @@
     position: relative;
     transition: border-color 0.3s;
 }
-.stat-box:hover {
-    border-color: var(--border2);
-}
-
 
 .stat-box::after {
     content: '';
@@ -62,20 +58,11 @@
 }
 
 
-
-
 @media (max-width: 768px) {
     .about-grid {
         display: flex;
         flex-direction: column;
     }
-
-    /*.about-stats {*/
-    /*    display: grid;*/
-    /*    grid-template-columns: 1fr;*/
-    /*    gap: 5px;*/
-    /*    text-align: center;*/
-    /*}*/
 }
 
 @media (max-width: 480px) {

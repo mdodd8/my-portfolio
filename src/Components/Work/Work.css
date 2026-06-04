@@ -5,7 +5,7 @@
 }
 .project-card {
     background: var(--bg3);
-    border: 1px solid var(--border);
+    border: 1px solid rgb(117 159 71);
     overflow: hidden;
     position: relative;
     transition: border-color 0.3s;
@@ -13,7 +13,7 @@
 .project-card:hover { border-color: var(--text2); }
 
 .project-visual {
-    height: 390px;
+    max-height: 390px;
     position: relative;
     overflow: hidden;
 }
@@ -34,7 +34,7 @@
     letter-spacing: 0.08em;
 }
 .project-title {
-    font-family: 'Playfair Display', serif;
+    font-family: sans-serif;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -58,7 +58,9 @@
 .project-arrow {
     width: 36px;
     height: 36px;
-    border: 1px solid var(--border2);
+    /*border: 1px solid var(--border2);*/
+    border: 1px solid var(--accent);
+    background: var(--ghost-accent);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -106,7 +108,16 @@
 /*}*/
 
 @media (max-width: 768px) {
-    .project-featured { grid-template-columns: 1fr;
-    background: red;}
+    .project-featured {
+        grid-template-columns: 1fr;
+    }
+
+    .project-visual {
+        max-height: 200px;
+    }
+
+    .project-desc {
+        display: none;
+    }
 
 }

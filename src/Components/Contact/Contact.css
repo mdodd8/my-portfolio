@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     width: 25rem;
+    color: var(--accent);
 }
 
 .font-text::after, .font-text::before {
@@ -10,26 +11,7 @@
     border: 2px solid var(--accent);
 }
 
-.submit-btn:active, .submit-btn:focus:active {
-    background: #e1fbbf;
-    color: black;
-}
-
 .error-message {
     color: #f95e5e;
     margin: 0;
-}
-
-.toastr-container {
-    border: 1px solid rgb(255 255 255 / 26%);
-    border-radius: 5px;
-}
-
-.toast-header {
-    padding: 10px;
-    border-bottom: 1px solid rgb(255 255 255 / 26%);
-}
-
-.toast-body {
-    padding: 10px;
 }

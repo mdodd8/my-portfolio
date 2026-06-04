@@ -1,17 +1,24 @@
 :root {
     --bg: #0a0a0f;
     --bg2: #111118;
-    --bg3: #18181f;
+    --bg3: #161616;
+    --bg4: #18181f;
+    --bg-drawers: rgba(0, 0, 0, 0.6);
     --accent: #b8f26e;
     --accent2: #7ef4d4;
+    --ghost: #808080;
+    --ghost-accent: #b8f26e3d;
+    --accent-background: rgba(184,242,110,0.08);
     --text: #f0eee8;
     --text2: #a09e9a;
     --text3: #5a5856;
     --border: rgba(255,255,255,0.07);
     --border2: rgba(255,255,255,0.12);
+    --border3: rgba(255, 255, 255, 0.1);
     --card: rgba(255,255,255,0.03);
     --primary-text: 'Syne';
     --secondary-text: 'JetBrains Mono';
+    --navbar-height: 70px;
 }
 
 html { scroll-behavior: smooth; }
@@ -30,17 +37,4 @@ body {
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
-}
-
-.btn-primary {
-    padding: 8px 40px;
-    background: var(--accent);
-    color: var(--bg);
-
-}
-
-.btn-primary:hover {
-    background: transparent;
-    color: var(--accent);
-    border: 1px solid var(--accent);
 }

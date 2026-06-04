@@ -1,0 +1,27 @@
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--secondary-text), monospace;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--accent);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+.section-header::after {
+    content: '';
+    flex: 1;
+    max-width: 60px;
+    height: 1px;
+    background: var(--accent);
+    opacity: 0.5;
+}
+
+.section-title {
+    font-family: var(--primary-text), serif;
+    font-size: clamp(36px, 4vw, 56px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}

@@ -1,5 +1,10 @@
-.experience-section { background: var(--bg2); }
-.exp-list { margin-top: 15px; }
+.experience-section {
+    background: var(--bg2);
+}
+.exp-list {
+    margin-top: 15px;
+}
+
 .exp-item {
     display: grid;
     grid-template-columns: 200px 1fr auto;
@@ -9,8 +14,15 @@
     align-items: start;
     transition: border-color 0.3s;
 }
-.exp-item:first-child { border-top: 1px solid var(--border); }
-.exp-item:hover { border-bottom-color: var(--accent2); }
+
+.exp-item:first-child {
+    border-top: 1px solid var(--border);
+}
+
+.exp-item:hover {
+    border-bottom-color: var(--accent2);
+}
+
 .exp-period {
     font-family: var(--secondary-text), monospace;
     color: var(--text2);
@@ -32,6 +44,7 @@
     font-size: 15px;
     color: var(--text2);
     line-height: 1.7;
+    margin-bottom: 2px;
 }
 .exp-badge {
     font-family: var(--secondary-text), monospace;
@@ -42,7 +55,6 @@
     color: var(--text2);
     white-space: nowrap;
 }
-
 
 @media (max-width: 768px) {
     .exp-item {

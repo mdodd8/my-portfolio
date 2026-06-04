@@ -1,12 +1,6 @@
-.type-badge {
-    background: #253e5f;;
-    border-radius: 15px;
-    width: fit-content;
-    padding: 0px 11px;
-}
-
 .proj-title {
     font-size: 22px;
+    margin-top: 12px;
 }
 
 .proj-description {
@@ -39,7 +33,12 @@
 
 
 .destination-btn:hover {
-    background: gray;
-    border: 1px solid #6a7c50;
-    box-shadow: 1px 1px 9px black;
+    border: 1px solid var(--accent);
+    background: var(--ghost-accent);
+}
+
+@media (max-width: 768px) {
+    .subtext-container {
+        grid-template-columns: 1fr;
+    }
 }
