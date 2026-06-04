@@ -13,8 +13,8 @@ interface TagProps {
 function Tag ({tags}: TagProps) {
     return (
         <div className="tags-container">
-            {tags.map((tag) => (
-                <span style={{color: tag.color, background: tag.background}} className="tag-item">{tag.label}</span>
+            {tags.map((tag, index) => (
+                <span key={index} style={{color: tag.color, background: tag.background}} className="tag-item">{tag.label}</span>
             ))}
         </div>
     )

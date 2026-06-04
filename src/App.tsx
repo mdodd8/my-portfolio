@@ -42,11 +42,16 @@ function App() {
                   ☰
               </button>
               <nav className={`nav-links ${isOpen ? 'open' : ''}`}>
-                  <a href="#about">About</a>
-                  <a href="#skills">Skills</a>
-                  <a href="#work">Work</a>
-                  <a href="#projects">Projects</a>
-                  <a href="#contact">Contact</a>
+                  <a href="#about"
+                  className={activeSection === 'about' ? 'active' : ''}>About</a>
+                  <a href="#skills"
+                  className={activeSection === 'skills' ? 'active' : ''}>Skills</a>
+                  <a href="#work"
+                  className={activeSection === 'work' ? 'active' : ''}>Work</a>
+                  <a href="#projects"
+                  className={activeSection === 'projects' ? 'active' : ''}>Projects</a>
+                  <a href="#contact"
+                  className={activeSection === 'contact' ? 'active' : ''}>Contact</a>
               </nav>
               <div className=" d-flex gap-3">
                   <button className="btn ghost-btn resume d-flex gap-3"
