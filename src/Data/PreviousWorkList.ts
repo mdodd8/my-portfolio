@@ -1,5 +1,4 @@
 import type {PortfolioCardInterface} from "../Interfaces/PortfolioCardInterface.ts";
-import Img5 from '../assets/bth-5.png'
 import Img2 from '../assets/Nutritionist Calc.png'
 import Img3 from '../assets/gateway-3.png'
 import Img4 from '../assets/mercado-2.png'
