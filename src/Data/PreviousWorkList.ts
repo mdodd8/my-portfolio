@@ -3,6 +3,7 @@ import Img5 from '../assets/bth-5.png'
 import Img2 from '../assets/Nutritionist Calc.png'
 import Img3 from '../assets/gateway-3.png'
 import Img4 from '../assets/mercado-2.png'
+import Img1 from '../assets/bth-6.png'
 
 const tagColors = {
 
@@ -36,7 +37,7 @@ export const previousWorkList: PortfolioCardInterface[] = [
             {label: 'UI/UX Design', ...tagColors.design},
             {label: 'Adobe', ...tagColors.design}
            ],
-        image: Img5
+        image: Img1
     },
     {
         id: 2,
