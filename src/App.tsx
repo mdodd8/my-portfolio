@@ -43,9 +43,9 @@ function App() {
               </button>
               <nav className={`nav-links ${isOpen ? 'open' : ''}`}>
                   <a href="#about">About</a>
+                  <a href="#skills">Skills</a>
                   <a href="#work">Work</a>
                   <a href="#projects">Projects</a>
-                  <a href="#skills">Skills</a>
                   <a href="#contact">Contact</a>
               </nav>
               <div className=" d-flex gap-3">
